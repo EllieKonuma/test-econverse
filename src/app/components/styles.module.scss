@@ -1,0 +1,95 @@
+// .main{
+//   display: ;
+//   align-items: center;
+// }
+
+
+
+.p{  
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+.header{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+  
+}
+
+
+
+.DivSearch{
+  width: 657px;
+  height: 48px;
+  max-width: 100%;
+  background-color: #F6F5F2 ;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.searchBar{
+  width: 90%;
+  height: 100%;
+  border: none;
+  background-color:  #F6F5F2;
+  font-size: 14px;
+  color: #9F9F9F;
+}
+
+.searchBar__btn{
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color:  #F6F5F2;
+}
+
+.n_btn{
+  border: none;
+  background-color: #ffffff;
+  color: #9F9F9F;
+    &:hover{
+      color: #F71963;
+    }
+}
+
+
+
+.icon{
+  width: 28px;
+  height: 28px;
+  
+}
+
+.icon:hover{
+  fill: #F71963;
+}
+
+.navButtons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 12px;
+  // font-family: poppins;
+  
+
+}
+
+// Arrumar e pedir ajuda :3
+// .iconA{
+//     width: 24px;
+//     height: 24px;
+// }
+
+// .iconB{
+//   width: 32px;
+//   height: 32px;
+// }
+
