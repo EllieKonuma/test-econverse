@@ -40,14 +40,13 @@
   background-color: #f6f5f2;
 }
 
-.icon {
+.svg {
   width: 28px;
   height: 28px;
+  &:hover path {
+    fill: #f71963;
+  }
 }
-
-// .icon:hover {
-//   fill: #f71963;
-// }
 
 .navButtons {
   display: flex;
