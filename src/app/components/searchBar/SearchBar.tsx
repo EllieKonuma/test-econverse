@@ -12,7 +12,7 @@ export default function SearchBar() {
           <input
             type="text"
             placeholder="type something"
-            value="O que você está buscando?"
+            value="  O que você está buscando?"
             className={styles.searchBar}
           />
           <button type="submit" className={styles.searchBar__btn}>

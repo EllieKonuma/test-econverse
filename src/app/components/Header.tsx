@@ -12,9 +12,19 @@ import parcelas from "../Image/certificados/parcelas.svg";
 import SearchBar from "./searchBar/SearchBar";
 import style from "./styles.module.scss";
 
+// import { Poppins } from "next/font/google";
+
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-poppins",
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+// });
+
 export default function Header() {
   return (
     <header className={style.p}>
+      {/* <div className={style.p}> */}
       <div className={style.header}>
         <Image src={compra} alt="compra 100% segura" />
         <Image src={frete} alt="frete grátis" />
@@ -49,6 +59,7 @@ export default function Header() {
           <button className={style.n_btn}>Assinatura</button>
         </div>
       </nav>
+      {/* </div> */}
     </header>
   );
 }
