@@ -1,17 +1,12 @@
 import React from "react";
 import caroselStyles from "./carosel_styles.module.scss";
 import Btn from "./Btn";
+import Title from "./Title";
 
 export default function TileButtons() {
   return (
     <div className={caroselStyles.configContainer}>
-      <div className={caroselStyles.configDisplay}>
-        <div className={caroselStyles.line}></div>
-        <div className={caroselStyles.h2}>
-          <h2>Produtos relacionados</h2>
-        </div>
-        <div className={caroselStyles.line}></div>
-      </div>
+      <Title titleContent="Produtos relacionados" />
       <div className={caroselStyles.alineBnts}>
         <Btn name="CELULAR" />
         <Btn name="ACESSÓRIOS" />
