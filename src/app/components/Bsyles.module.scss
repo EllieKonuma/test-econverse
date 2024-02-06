@@ -1,5 +1,10 @@
-.imageDiv{
-  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../Image/fotoDeDescontos.jpeg);
+.imageDiv {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../Image/fotoDeDescontos.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,25 +18,29 @@
   padding-bottom: 3rem;
 }
 
-.btn{
+.btn {
   width: 227px;
   height: 60px;
   border-radius: 5px;
   border: none;
-  background-color: #F71963;
-  color: #FFFFFF;
+  background-color: #f71963;
+  color: #ffffff;
   font-size: 18px;
+  &:hover {
+    background-color: #c91551;
+    cursor: pointer;
+  }
 }
 
-.pTitle{
+.pTitle {
   width: 822px;
   font-size: 48px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.pPromotion{ 
+.pPromotion {
   font-size: 36px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }

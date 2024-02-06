@@ -1,0 +1,122 @@
+$colorHighlight: #f71963;
+$colorBase: #3f3f40;
+
+.configContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  flex-direction: column;
+}
+.configDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  height: 1px;
+  background: #dedede;
+  width: 360px;
+}
+
+.h2 {
+  color: $colorHighlight;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.alineBnts {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.divBorder {
+  width: 211.5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dedede;
+  .pBnt {
+    color: #3b3b3b;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  :hover {
+    color: $colorHighlight;
+    font-weight: 700;
+  }
+}
+
+.cardConfig {
+  width: 270px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  // justify-content: center;
+  .pInfo {
+    color: $colorBase;
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 1rem;
+  }
+  .pDiscount {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #808080;
+    padding-top: 1rem;
+  }
+  .pPrice {
+    font-weight: 700;
+    font-size: 20px;
+    color: $colorBase;
+    padding-top: 0.5rem;
+  }
+  .xInterestRate {
+    font-weight: 400;
+    font-size: 12px;
+    color: $colorBase;
+    padding-top: 0.5rem;
+  }
+  .freight {
+    font-weight: 400;
+    font-size: 12px;
+    color: $colorHighlight;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .compraBtn {
+    width: 237px;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background-color: $colorHighlight;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #c91551;
+      cursor: pointer;
+    }
+  }
+}
+
+.crouselFex {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
