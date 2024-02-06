@@ -4,7 +4,7 @@ const Crown = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
     <g clipPath="url(#a)">
       <path
-        stroke="#f71963"
+        stroke="#9F9F9F"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}

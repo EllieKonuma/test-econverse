@@ -40,16 +40,16 @@ export default function Header() {
         <Cart className={style.svgComp} height={"32px"} width={"32px"} />
       </nav>
       <nav className={style.navButtons}>
-        <button className={style.n_btn}>Todas as Categorias</button>
-        <button className={style.n_btn}>SuperMercado</button>
-        <button className={style.n_btn}>Livros</button>
-        <button className={style.n_btn}>Moda</button>
-        <button className={style.n_btn}>Lançamento</button>
-        <button className={style.n_btn}>Oferta do Dia</button>
-        <div className={style.navButtons}>
-          <Crown height={"20px"} width={"20px"} />
-          <button className={style.n_btn}>Assinatura</button>
-        </div>
+        <button className={style.n_btn}>TODAS CATEGORIAS</button>
+        <button className={style.n_btn}>SUPERMERCADO</button>
+        <button className={style.n_btn}>LIVROS</button>
+        <button className={style.n_btn}>MODA</button>
+        <button className={style.n_btn}>LANÇAMENTOS</button>
+        <button className={style.n_btn}>OFERTA DO DIA</button>
+        <button className={style.n_btn}>
+          <Crown className={style.svgNav} height={"20px"} width={"20px"} />
+          ASSINATURA
+        </button>
       </nav>
       {/* </div> */}
     </header>

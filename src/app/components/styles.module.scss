@@ -52,18 +52,28 @@
   }
 }
 
+.svgNav {
+  margin-right: 12px;
+}
+
 .navButtons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
   .n_btn {
+    display: flex;
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
     color: #9f9f9f;
+    font-weight: 600;
+
     &:hover {
       color: #f71963;
-      fill: #f71963;
+    }
+
+    &:hover path {
+      stroke: #f71963;
     }
   }
 }

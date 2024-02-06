@@ -1,12 +1,44 @@
+.containerBnt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.divbnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // font-weight: 500;
+  // color: #4e4e4e;
+}
+
 .bnt {
+  display: flex;
   width: 128px;
   height: 128px;
-  border: none;
+  // border: none;
   border-radius: 10px;
   background-color: #f4f4f4;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  &:hover {
+    color: #f71963;
+  }
+
+  &:hover path {
+    stroke: #f71963;
+  }
 }
 
 .imageBnt {
   width: 61px;
   height: 61px;
+}
+
+.p {
+  font-weight: 500;
+  color: #4e4e4e;
+  padding-top: 2rem;
 }

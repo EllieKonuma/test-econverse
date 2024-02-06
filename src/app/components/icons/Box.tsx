@@ -1,13 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 const Box = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={26}
-    height={26}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
     <path
       fill="#9F9F9F"
       stroke="#9F9F9F"
