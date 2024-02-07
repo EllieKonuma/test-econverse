@@ -15,7 +15,7 @@ interface CarouselProps {
 
 export default function Carousel({ products }: CarouselProps) {
   const [openProductModal, setOpenProductModal] = useState(false);
-  const [currentProduct, setProducModalId] = useState<Product | null>(null);
+  const [currentProduct, setProducModalId] = useState<Product>(null);
 
   const openModal = (product: Product) => {
     setOpenProductModal(true);

@@ -1,25 +1,32 @@
-/* The Modal (background) */
+$colorHighlight: #f71963;
+$colorBase: #3f3f40;
+$primaryColor: #041e50;
+
 .modal {
-  position: relative;
+  position: absolute;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 163%;
+  padding-top: 40rem;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: none;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modalContent {
   display: flex;
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  justify-content: space-around;
+  background-color: #ffffff;
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 769px;
+  height: 300px;
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
@@ -32,4 +39,63 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.infoFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: $primaryColor;
+  }
+
+  .pPrice {
+    font-size: 20px;
+    font-weight: 800;
+    color: $primaryColor;
+  }
+  .pInfo {
+    font-size: 10px;
+    font-weight: 400;
+    color: $colorBase;
+  }
+  .pMoreinfo {
+    font-size: 12px;
+    font-weight: 400;
+    color: $primaryColor;
+  }
+}
+
+.caunter {
+  width: 110px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: solid;
+  border-radius: 1px;
+  border-color: $primaryColor;
+  color: $primaryColor;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.compraBtn {
+  width: 237px;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  background-color: $colorHighlight;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #c91551;
+    cursor: pointer;
+  }
 }
