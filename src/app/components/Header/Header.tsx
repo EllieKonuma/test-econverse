@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import LogoImage from "../Image/Logo_VTEX.svg";
-import compra from "../Image/certificados/compra100.svg";
-import frete from "../Image/certificados/freteGratis.svg";
-import parcelas from "../Image/certificados/parcelas.svg";
-import SearchBar from "./searchBar/SearchBar";
+import LogoImage from "../../Image/Logo_VTEX.svg";
+import compra from "../../Image/certificados/compra100.svg";
+import frete from "../../Image/certificados/freteGratis.svg";
+import parcelas from "../../Image/certificados/parcelas.svg";
+import SearchBar from "../searchBar/SearchBar";
 import style from "./styles.module.scss";
-import Heart from "./icons/Heart";
-import Box from "./icons/Box";
-import User from "./icons/User";
-import Cart from "./icons/Cart";
-import Crown from "./icons/Crown";
+import Heart from "../icons/Heart";
+import Box from "../icons/Box";
+import User from "../icons/User";
+import Cart from "../icons/Cart";
+import Crown from "../icons/Crown";
 
 export default function Header() {
   return (

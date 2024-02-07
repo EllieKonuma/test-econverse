@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles.module.scss";
+import styles from "../Header/styles.module.scss";
 import { type } from "os";
 import glass from "../../Image/MagnifyingGlass.svg";
 import Image from "next/image";
