@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Banner from "./components/Banner";
-import Services from "./components/Services";
+import Services from "./components/btnServices/Services";
 import Carousel from "./components/Carousel/Carousel";
 import Partners from "./components/Partners/Partners";
 import Products from "./components/Products/Products";

@@ -1,9 +1,10 @@
 import React from "react";
 import services_styles from "./services_styles.module.scss";
+import Image, { StaticImageData } from "next/image";
 
 interface IServices {
   title: string;
-  image: React.JSX.Element;
+  image: StaticImageData;
 }
 
 export default function ServicesBtn(prop: IServices) {
@@ -11,7 +12,9 @@ export default function ServicesBtn(prop: IServices) {
   return (
     <div className={services_styles.divbnt}>
       <div className={services_styles.bnt}>
-        <div className={services_styles.imageBnt}>{prop.image}</div>
+        <div className={services_styles.imageBnt}>
+          <Image src={prop.image} alt="" />
+        </div>
       </div>
       <div className={services_styles.p}>
         <p>{prop.title}</p>
