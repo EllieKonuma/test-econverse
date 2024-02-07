@@ -1,53 +1,44 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import CarouselHead from "./CarouselHead";
 import CarouselCard from "./CarouselCard";
 import FCelular from "../../Image/FotoCelular.png";
 import caroselStyles from "./carosel_styles.module.scss";
 import ArrowL from "../icons/ArrowL";
 import ArrowR from "../icons/ArrowR";
+import { Product } from "@/app/page";
+import Modal from "../Modal/Modal";
 
-export default function Carousel() {
+interface CarouselProps {
+  products: Product[];
+}
+
+export default function Carousel({ products }: CarouselProps) {
+  const [openProductModal, setOpenProductModal] = useState(false);
+  const [currentProduct, setProducModalId] = useState<Product | null>(null);
+
+  const openModal = (product: Product) => {
+    setOpenProductModal(true);
+    setProducModalId(product);
+
+    console.log(openProductModal);
+  };
+
+  const closeModal = () => setOpenProductModal(false);
+
   return (
     <div>
+      {openProductModal ? (
+        <Modal product={currentProduct} onClose={closeModal} />
+      ) : (
+        <></>
+      )}
       <CarouselHead />
       <div className={caroselStyles.crouselFex}>
         <ArrowL />
-        <CarouselCard
-          image={FCelular}
-          alt="Foto Celular"
-          infoProduct="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          infoDiscount="30,90"
-          infoPrice="28,90"
-          xInterestRate="ou 2x de R$ 49,95 sem juros"
-          freeFreight="Frete grátis"
-        />
-        <CarouselCard
-          image={FCelular}
-          alt="Foto Celular"
-          infoProduct="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          infoDiscount="30,90"
-          infoPrice="28,90"
-          xInterestRate="ou 2x de R$ 49,95 sem juros"
-          freeFreight="Frete grátis"
-        />
-        <CarouselCard
-          image={FCelular}
-          alt="Foto Celular"
-          infoProduct="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          infoDiscount="30,90"
-          infoPrice="28,90"
-          xInterestRate="ou 2x de R$ 49,95 sem juros"
-          freeFreight="Frete grátis"
-        />
-        <CarouselCard
-          image={FCelular}
-          alt="Foto Celular"
-          infoProduct="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          infoDiscount="30,90"
-          infoPrice="28,90"
-          xInterestRate="ou 2x de R$ 49,95 sem juros"
-          freeFreight="Frete grátis"
-        />
+        {products.map((p) => (
+          <CarouselCard product={p} onClick={openModal} />
+        ))}
         <ArrowR />
       </div>
     </div>

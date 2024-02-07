@@ -1,30 +1,38 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import caroselStyles from "./carosel_styles.module.scss";
+import { Product } from "@/app/page";
+import { formatMoney } from "@/utils/formatMoney";
 
 interface InformationCard {
-  image: StaticImageData;
-  alt: string;
-  infoProduct: string;
-  infoDiscount: string;
-  infoPrice: string;
-  xInterestRate?: string;
-  freeFreight?: string;
+  product: Product;
+  onClick: (index: Product) => void;
 }
 
-export default function CarouselCard(prop: InformationCard) {
+export default function CarouselCard({ product, onClick }: InformationCard) {
   return (
     <div className={caroselStyles.cardConfig}>
-      <Image src={prop.image} alt={prop.alt} />
-      <p className={caroselStyles.pInfo}>{prop.infoProduct}</p>
+      <img src={product.photo} />
+      <p className={caroselStyles.pInfo}>{product.descriptionShort}</p>
 
       <div>
-        <p className={caroselStyles.pDiscount}>R$ {prop.infoDiscount}</p>
-        <p className={caroselStyles.pPrice}>R$ {prop.infoPrice}</p>
+        <p className={caroselStyles.pDiscount}>
+          {formatMoney.format(product.price * 1.1)}
+        </p>
+        <p className={caroselStyles.pPrice}>
+          {formatMoney.format(product.price)}
+        </p>
       </div>
-      <p className={caroselStyles.xInterestRate}>{prop.xInterestRate}</p>
-      <p className={caroselStyles.freight}>{prop.freeFreight}</p>
-      <button className={caroselStyles.compraBtn}>Comprar</button>
+      <p className={caroselStyles.xInterestRate}>
+        ou 2x de {formatMoney.format(product.price / 2)} sem juros
+      </p>
+      <p className={caroselStyles.freight}>Frete grátis</p>
+      <button
+        className={caroselStyles.compraBtn}
+        onClick={() => onClick(product)}
+      >
+        Comprar
+      </button>
     </div>
   );
 }
