@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import CarouselHead from "./CarouselHead";
 import CarouselCard from "./CarouselCard";
-import FCelular from "../../Image/FotoCelular.png";
 import caroselStyles from "./carosel_styles.module.scss";
 import ArrowL from "../icons/ArrowL";
 import ArrowR from "../icons/ArrowR";

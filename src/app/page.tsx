@@ -1,13 +1,11 @@
-import Banner from "./components/Banner";
-import Carousel from "./components/Carousel/Carousel";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Services from "./components/Services";
+import Carousel from "./components/Carousel/Carousel";
 import Partners from "./components/Partners/Partners";
 import Products from "./components/Products/Products";
-import Services from "./components/Services";
-import type { InferGetStaticPropsType, GetStaticProps } from "next";
-import styles from "./components/styles.module.scss";
-import Image from "next/image";
+import Brands from "./components/Brands/Brands";
+import Footer from "./components/Footer/Footer";
 
 export type Product = {
   productName: string;
@@ -40,6 +38,7 @@ export default async function Home() {
       <Carousel products={products} />
       <Partners />
       <Products />
+      <Brands />
       <Footer />
     </main>
   );
