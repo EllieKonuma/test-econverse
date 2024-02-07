@@ -62,7 +62,7 @@ export default function Footer() {
           reprodução, total ou parcial, de qualquer conteúdo sem expressa
           autorização.
         </p>
-        <Image src={brandsEV} />
+        <Image src={brandsEV} alt="Logos" />
       </div>
     </footer>
   );
