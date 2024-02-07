@@ -1,6 +1,6 @@
 .p {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 25rem;
+  padding-right: 25rem;
 }
 
 .header {
@@ -38,17 +38,25 @@
   height: 28px;
   border: none;
   background-color: #f6f5f2;
+  .sbtn {
+    &:hover path {
+      fill: #f71963;
+      cursor: pointer;
+    }
+  }
 }
 
 .svg {
   &:hover path {
     fill: #f71963;
+    cursor: pointer;
   }
 }
 
 .svgComp {
   &:hover path {
     stroke: #f71963;
+    cursor: pointer;
   }
 }
 
@@ -60,6 +68,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   .n_btn {
     display: flex;
@@ -70,6 +80,7 @@
 
     &:hover {
       color: #f71963;
+      cursor: pointer;
     }
 
     &:hover path {

@@ -13,7 +13,7 @@ export default function SearchBar() {
         className={styles.searchBar}
       />
       <button type="submit" className={styles.searchBar__btn}>
-        <Image src={glass} alt="botão de lupa" />
+        <Image className={styles.sbtn} src={glass} alt="botão de lupa" />
       </button>
     </div>
   );
